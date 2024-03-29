@@ -1,25 +1,95 @@
 .header {
-    width: 100%;
-    height: 160px;
-    background-color: skyblue;
+    height: 100px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-.header_text {
+.header-text {
     text-align: center;
     padding-top: 60px;
     margin: auto;
     font-size: 40px;
 }
 
-body {
-    margin: auto;
+.horisontal-panel {
+    width: 100%;
 }
+
+.main-page {
+    height: auto;
+}
+
+.block {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.check-compensation-section {
+    border-width: 5px;
+    border-style: solid;
+    width: 80%;
+    --height: 300px;
+    height: var(--height);
+    border-color: gray;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.width-center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.check-compensation-button {
+    width: 40%;
+    --height: 100px;
+    height: var(--height);
+    border-width: 0;
+}
+
+.rounded-corners {
+    border-radius: calc(var(--height) / 2)
+}
+
+.slitely-rounded-corners {
+    border-radius: 25px;
+}
+
+.slitely-rounded-top-corners {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/*---------------------- SIZE ---------------------*/
+
+.big {
+    min-height: 750px;
+}
+
+.medium {
+    min-height: 500px;
+}
+
+.small {
+    min-height: 250px;
+}
+
+/*---------------------- FONTS ---------------------*/
 
 .rubik-semibold {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    font-size: 170%;
 }
 
 .rubik-regular {
@@ -29,10 +99,27 @@ body {
     font-style: normal;
 }
 
-.contains {
-    background-color: white;
-    height: auto;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
+/*--------------------- COLORS ----------------------*/
+
+.deep-blue {
+    background-color: #50B5FF;
+}
+
+.light-blue {
+    background-color: #BDE3FF;
+}
+
+.dark-gray {
+    background-color: #414141;
+}
+
+.light-green {
+    background-color: #AFF4C6;
+}
+
+/*-------------------------------------------*/
+
+body {
+    margin: auto;
+    min-width: 1600px;
 }
