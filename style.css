@@ -1,7 +1,9 @@
-.header {
+#navbar {
     height: 100px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    position: fixed;
+    z-index: 10;
 }
 
 .header-text {
@@ -15,8 +17,10 @@
     width: 100%;
 }
 
-.main-page {
+#main-content {
     height: auto;
+    position: relative;
+    top: 100px;
 }
 
 .block {
