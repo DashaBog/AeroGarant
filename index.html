@@ -2,27 +2,42 @@
 <html lang="en">
 
 <head>
+    <script src="jquery-3.7.1.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>AeroGarant</title>
 </head>
 
 <body>
-    <div id="navbar" class="horisontal-panel deep-blue sticky"></div>
+    <div id="navbar" class="horisontal-panel deep-blue sticky">
+        <img id="icon" src="icon.png">
+        <button class="deep-blue" onclick="$('html, body').animate({ scrollTop: '850px' });"
+            style="grid-column: 2;"></button>
+        <button class="deep-blue" onclick="$('html, body').animate({ scrollTop: '1600px' });"
+            style="grid-column: 3;"></button>
+        <button class="deep-blue" onclick="$('html, body').animate({ scrollTop: '2300px' });"
+            style="grid-column: 4;"></button>
+    </div>
     <div id="main-content" class="horisontal-panel">
-        <div class="block medium center-content">
-            <div class="check-compensation-section center-content rounded-corners">
-                <button class="check-compensation-button light-green rounded-corners"
+        <div class="block medium" style="display: grid; gap: 2%; grid-template-rows: 100px 100px;">
+            <p id="check-compensation-writing" class="ubuntu-bold dark-gray-font" style="font-size: 300%;">Ваш багаж был
+                задержан или утерян? <br> Отменён рейс?
+            </p>
+            <p id="check-compensation-writing" class="ubuntu-medium dark-gray-font" style="font-size: 200%;">Поспешите
+                вернуть до ЫЫЫ
+                деняг и всё такое
+            </p>
+            <div id="check-compensation-section" class="center-content rounded-corners">
+                <button id="check-compensation-button" class="light-green rounded-corners"
                     onclick="window.location.href='https://duckduckgo.com';">
                     <p class="rubik-semibold">Проверить компенсацию</p>
                 </button>
             </div>
         </div>
         <div class="medium light-blue horisontal-panel slitely-rounded-corners"></div>
-        <div class="big horisontal-panel slitely-rounded-corners"></div>
+        <div class="big block slitely-rounded-corners"></div>
         <div class="small horisontal-panel light-blue slitely-rounded-top-corners"></div>
-        <div id="additional-info" class="horisontal-panel dark-gray slitely-rounded-top-corners" style="height: 160px;
-            margin-top: -25px;"></div>
+        <div id="additional-info" class="horisontal-panel dark-gray slitely-rounded-top-corners"></div>
     </div>
 </body>
 
