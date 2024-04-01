@@ -4,19 +4,43 @@
     border-bottom-right-radius: 25px;
     position: fixed;
     z-index: 10;
+}
 
+#navbar-wrapper {
+    width: 70%;
+    height: 100%;
     display: grid;
+    grid-template-columns: 40% 25% 25% 25% 25%;
 }
 
 #navbar img {
     margin: auto;
-    height: 50%;
+    height: 40%;
 }
 
 #navbar button {
     margin: auto;
     height: 100%;
     width: 100%;
+    border-width: 0;
+}
+
+#navbar-wrapper div {
+    background-color: #50B5FF;
+    /* transition: 0.5s; */
+}
+
+#navbar-wrapper div :hover {
+    background-color: #4192cc;
+    transition: 0.5s;
+}
+
+#navbar p {
+    margin: auto;
+    color: white;
+    font-size: 175%;
+    top: 8%;
+    position: relative;
 }
 
 #main-content {
@@ -30,20 +54,40 @@
     margin-top: -25px;
 }
 
+#check-compensation-wrapper {
+    display: grid;
+    gap: 2%;
+    grid-template-rows: 25% 10% 28% 7% 10%;
+}
+
 #check-compensation-button {
-    width: 40%;
+    width: 100%;
     --height: 100px;
     height: var(--height);
-    border-width: 0;
+    font-size: 130%;
 }
 
 #check-compensation-section {
-    border-width: 5px;
-    border-style: solid;
     width: 100%;
     --height: 300px;
     height: var(--height);
     border-color: gray;
+    display: grid;
+    grid-template-columns: 33% 33% 30%;
+    grid-template-rows: 50%;
+    gap: 2%;
+}
+
+#check-compensation-label-from {
+    --height: 100px;
+    height: var(--height);
+    font-size: 130%;
+}
+
+#check-compensation-label-to {
+    --height: 100px;
+    height: var(--height);
+    font-size: 130%;
 }
 
 #check-compensation-writing {
@@ -51,11 +95,20 @@
     height: 100px;
 }
 
-.header-text {
+#law-sources {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#law-sources p {
     text-align: center;
-    padding-top: 60px;
-    margin: auto;
-    font-size: 40px;
+    font-size: 115%;
+}
+
+/*-------------------------------------------------------*/
+
+.bordered {
+    border-width: 5px;
 }
 
 .horisontal-panel {
@@ -63,8 +116,8 @@
 }
 
 .block {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .center-content {
@@ -98,15 +151,15 @@
 /*---------------------- SIZE ---------------------*/
 
 .big {
-    min-height: 1000px;
+    height: 1000px;
 }
 
 .medium {
-    min-height: 750px;
+    height: 750px;
 }
 
 .small {
-    min-height: 400px;
+    height: 500px;
 }
 
 /*---------------------- FONTS ---------------------*/
@@ -203,3 +256,8 @@ body {
     margin: auto;
     min-width: 1000px;
 }
+
+/*----------------------- ANIMATIONS --------------------*/
+
+
+/*---------------------------*/
