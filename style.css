@@ -97,7 +97,7 @@
 
 #law-sources {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
 }
 
 #law-sources p {
@@ -245,6 +245,11 @@
 .dark-gray-font {
     color: #333333;
 }
+
+.white-font {
+    color: #ffffff;
+}
+
 
 .light-green {
     background-color: #AFF4C6;
