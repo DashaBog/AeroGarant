@@ -121,6 +121,13 @@
     gap: 3%;
 }
 
+#link-button {
+    margin: auto;
+    width: 20%;
+    --height: 100px;
+    height: var(--height);
+}
+
 .content-wrapper {
     padding: 5%;
 }
