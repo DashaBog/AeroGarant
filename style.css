@@ -105,10 +105,33 @@
     font-size: 115%;
 }
 
+#work-details-wrapper {
+    height: inherit;
+    display: grid;
+    gap: 2%;
+    grid-template-rows: 10% 60%;
+    padding-top: 5%;
+}
+
+#details-grid-wrapper {
+    height: 90%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 31% 32% 31%;
+    gap: 3%;
+}
+
+.content-wrapper {
+    padding: 5%;
+}
+
 /*-------------------------------------------------------*/
 
+
 .bordered {
-    border-width: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
 }
 
 .horisontal-panel {
@@ -151,7 +174,7 @@
 /*---------------------- SIZE ---------------------*/
 
 .big {
-    height: 1000px;
+    height: 700px;
 }
 
 .medium {
@@ -242,6 +265,14 @@
     background-color: #414141;
 }
 
+.light-gray {
+    background-color: #dfdfdf;
+}
+
+.white {
+    background-color: #f7f7f7;
+}
+
 .dark-gray-font {
     color: #333333;
 }
@@ -249,7 +280,6 @@
 .white-font {
     color: #ffffff;
 }
-
 
 .light-green {
     background-color: #AFF4C6;
